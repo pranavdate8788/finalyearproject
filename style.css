@@ -159,24 +159,26 @@ padding: .1rem 0 ;
     height: 110px;
     width: 300px;
 margin: .5rem auto;
-    background: rgb(66, 84, 201);
+    background: rgb(216, 143, 209);
     border-radius:24px;
 }
  
 .video-rating{
     display: flex;
+    margin-bottom: 1.5rem;
+    margin-right: 1rem;
 }
 .heading-rating{
     display: flex;
     padding: .5rem;
     justify-content: space-between;
 }
-.videobox-bottom{
+.videobox-button{
  padding: .4rem;
  background: rgb(236, 10, 217);
- width: 90px;
+ width: 75px;
  text-align: center;
- border-radius: 15px;
+ border-radius: 20px;
 position: absolute ;
 right: 1.3rem;
 bottom: 0.4rem;
