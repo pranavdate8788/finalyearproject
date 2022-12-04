@@ -143,51 +143,48 @@ border-radius:150px ;
 .video-header{
 display: flex;
 justify-content: space-between;
-padding: .1rem 0 ;
 }
 .video-box{
     height: auto;
-    padding: 1rem .5rem;
-    width: 330px;
-    margin-top: 1rem;
+    padding: 1rem;
+    width: 325px;
+    margin: .8rem;
     background: rgb(178, 229, 186);
     position: relative;
-    border-radius:24px;
+    border-radius:10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .video{
-    height: 110px;
-    width: 300px;
-margin: .5rem auto;
+    height: 130px;
+    width: 100%;
+    margin: .7rem auto;
     background: rgb(216, 143, 209);
-    border-radius:24px;
+    border-radius:15px;
 }
  
 .video-rating{
     display: flex;
-    margin-bottom: 1.5rem;
-    margin-right: 1rem;
 }
 .heading-rating{
     display: flex;
-    padding: .5rem;
     justify-content: space-between;
 }
 .videobox-button{
- padding: .4rem;
+ padding: .4rem .8rem;
  background: rgb(236, 10, 217);
- width: 75px;
- text-align: center;
- border-radius: 20px;
-position: absolute ;
-right: 1.3rem;
-bottom: 0.4rem;
+ width: max-content;
+ height: max-content;
+ align-self: flex-end;
+ color: white;
+ border-radius: 1rem;
 
 }
 .video-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: .8rem;
-    margin-top: 1rem;
+    margin-top: .8rem;
+    justify-content: center;
 }

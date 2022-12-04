@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.videocall-screen {
+  width: 100vw;
+  display: flex;
+}
+.left-screen {
+  width: 75vw;
+  display: flex;
+  padding: 0 1rem;
+  flex-direction: column;
+}
+.right-screen {
+    width: 25vw;
+    height: 680px;
+    padding: 1rem;
+}
+
+.mytutor {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+}
+
+.heading-mytutor {
+  margin-left: 1rem;
+}
+.line {
+  height: 2px;
+  width: 90%;
+  background-color: gray;
+  margin-bottom: 0.5rem;
+}
+
+.videocall {
+  height: 600px;
+  background: rgb(227, 217, 15);
+  border-radius: .5rem;
+}
+.video-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 80%;
+}
+.video-user {
+  margin: 0.4rem;
+  padding: 0.1rem;
+  border-radius: 0.1rem;
+}
+.video-user img {
+  height: 50px;
+  width: 50px;
+  border-radius: 0.5rem;
+}
+.footer {
+  display: flex;
+  height: 20%;
+  align-items: center;
+}
+.footer-tutor i {
+  display: block;
+  margin-left: 1rem;
+  padding: 0.4rem;
+}
+.footer-tutor img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  margin-left: 0.5rem;
+}
+.footer-utility {
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  width: 50%;
+  background: rgb(44, 217, 240);
+  margin: auto auto 1rem;
+  gap: 4rem;
+  justify-content: center;
+  align-self: flex-end;
+  border-radius: 2rem;
+  align-items: center;
+}
+.call {
+  background: white;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+.chatscreen{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-end;
+    background: rgb(171, 171, 171);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.message-footer {
+  bottom: 0;
+  display: flex;
+  padding: 1rem 1rem;
+  color: white;
+  width: 100%;
+}
+
+.message-footer i{
+    margin: 0  0.25rem;
+}
+.inputmessage{
+    width: max-content;
+}
