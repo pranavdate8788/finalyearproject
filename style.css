@@ -10,6 +10,9 @@
 body{
     background: rgb(216, 156, 137);
 }
+
+/* --------- Navbar css------------ */
+
 .navbar{
     width: 100vw;
     height: 4rem;
@@ -50,10 +53,14 @@ i{
     border-radius: 100%;
     padding: 5px;
 }
+
+/* ------------- Vetical nav css --------------*/
+
 .verticalnav{
     height: calc(100vh - 3rem);
     width: 4rem;
 }
+
 .top{
     display: flex;
     flex-direction: column;
@@ -61,17 +68,22 @@ i{
     padding: 3rem 0;
     gap: 2rem;
 }
+
 .house{
     background: rgb(255, 255, 255);
     border-radius: 100%;
     padding: 5px;
 }
+
+
+/* -------- homesection css -------- */
+
 .homesection{
     display: flex;
     justify-content: start;
 }
 .home{
-    background: rgb(245, 234, 234);
+    background: rgb(225, 206, 206);
     width: calc(100vw - 4rem);
     padding: 1rem;
     border-radius: 2.5rem 2.5rem 0 0;

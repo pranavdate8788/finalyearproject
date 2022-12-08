@@ -1,0 +1,30 @@
+body{
+    background-color: red;
+}
+
+.videocall-screen{
+    flex-direction: column;
+}
+
+.left-screen{
+    width: 100vw;
+}
+.right-screen{
+    width: 100vw;
+}
+.footer-utility {
+    gap: 1.5rem;
+  }
+  .message-footer {
+    display: flex;
+    gap: 1rem;
+    width: 100vw;
+  }
+  
+  .message-footer i{
+      margin-left: 1.5rem;
+      
+  }
+  .inputmessage{
+     width: max-content;
+  }
