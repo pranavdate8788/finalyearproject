@@ -6,10 +6,30 @@
     font-family: 'DM Sans', sans-serif;
 
 }
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
 
 body{
-    background: rgb(216, 156, 137);
+    background: rgb(243, 241, 240);
 }
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+    border: 4px solid transparent;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-track-piece {
+    margin: 5px;
+  }
+  ::-webkit-scrollbar-corner{
+    display: none;
+  }
 
 /* --------- Navbar css------------ */
 
@@ -28,7 +48,7 @@ body{
     justify-content: space-between;
 }
 .searchbox{
-    background-color: rgb(240, 235, 234);
+    background-color: #e5e5e5;
     width: 35vw;
     display: flex;
     justify-content: space-between;
@@ -36,6 +56,9 @@ body{
     padding: 0 1rem;
     height: 2rem;
     border-radius: 1.7rem;
+}
+.dark .searchbox{
+    background-color: rgb(134, 121, 121);
 }
 .right{
     display: flex;
@@ -48,12 +71,15 @@ body{
 i{
     margin: 0% 0.5rem;
 }
+ 
 .profile{
     background: white;
     border-radius: 100%;
     padding: 5px;
 }
-
+.dark .profile{
+    background-color: #333;
+}
 /* ------------- Vetical nav css --------------*/
 
 .verticalnav{
@@ -74,21 +100,74 @@ i{
     border-radius: 100%;
     padding: 5px;
 }
+ .dark .house{
+    background-color: #333;
+}
 
-
-/* -------- homesection css -------- */
-
+/* homesection css  */
 .homesection{
     display: flex;
-    justify-content: start;
 }
+
 .home{
-    background: rgb(225, 206, 206);
+    background: rgb(241, 232, 232);
     width: calc(100vw - 4rem);
     padding: 1rem;
     border-radius: 2.5rem 2.5rem 0 0;
 }
-
+.dark .home{
+    background-color: #333;}
+    /*-----------leftside-menu-----*/
+.sidemenu {
+    position: fixed;
+    height: calc(100vh - 20px);
+    width: 260px;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 1rem;
+    border-radius: 0 2rem 2rem 0;
+    background: #999;
+    z-index: 1000;
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+  }
+  .dark .sidemenu{
+    background-color: rgb(31, 26, 26);
+}
+  .sidemenu-heading {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  .sidemenufunctions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+  }
+  #menuclose {
+    cursor: pointer;
+  }
+  .sidemenu-footer img {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 0.5rem;
+  }
+  .sidemenu-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    gap: 2.7rem;
+  }
+  .hideSidemenu {
+    transform: translateX(-260px);
+  }
+/*---------------result below section-----------------*/
 .status{
     display: flex;
     flex-direction: column;
@@ -96,6 +175,7 @@ i{
     align-items: center;
     
 }
+
 .numbers{
     display: flex;
     
@@ -122,11 +202,13 @@ i{
 .icon{
     text-align: right;
     padding: 0.5rem 1rem;
+ 
 }
+/*---------category of subjects------*/
 .category-box{
     display: flex;
-    flex-wrap: wrap;
-    
+    overflow-y: hidden;
+    padding-bottom: 1rem;
 }
 .category{
     position: relative;
@@ -141,7 +223,7 @@ i{
  width: 170px;
  height: 170px;
  border-radius: 999px;
- background: pink;
+ background: rgb(204, 192, 255);
 }
 .category-heading{
 position: absolute;
@@ -151,6 +233,13 @@ padding: 12px 24px;
 bottom: -20px;
 background: orange;
 border-radius:150px ;
+}
+/*-----------videos part ---------*/
+.video-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: .8rem;
+    justify-content: center;
 }
 .video-header{
 display: flex;
@@ -168,6 +257,9 @@ justify-content: space-between;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
+}
+.dark .video-box{
+    background-color: #333;
 }
 .video{
     height: 130px;
@@ -193,10 +285,4 @@ justify-content: space-between;
  color: white;
  border-radius: 1rem;
 
-}
-.video-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: .8rem;
-    justify-content: center;
 }

@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="./mobile1.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 500px)"
+      href="./mobile1.css" />
 
     <link
       rel="stylesheet"
@@ -19,7 +22,7 @@
     <div class="main">
       <div class="navbar">
         <div class="left">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" id="menubars"></i>
           <span class="mytutor">MyTutor</span>
           <div class="searchbox">
             <span>Search</span>
@@ -28,21 +31,41 @@
         </div>
 
         <div class="right">
-          <i class="fa-regular fa-moon"></i>
+          <i class="fa-regular fa-moon" onclick="ToggleDarkMode()"></i>
+
           <i class="fa-solid fa-circle-plus"></i>
           <i class="fa-solid fa-bell"></i>
           <i class="fa-solid fa-user profile"></i>
           <span>TutorName</span>
+        </div>
+
+        <div class="sidemenu hideSidemenu">
+          <div class="sidemenu-heading">
+            <span>MyTutor</span>
+            <i class="fa-regular fa-circle-xmark" id="menuclose"> </i>
+          </div>
+          <div class="sidemenufunctions">
+            <i class="fa-solid fa-moon" onclick="ToggleDarkMode()"> <span>Dark Mode</span></i>
+            <i class="fa-solid fa-bell"> <span>Notifications</span></i>
+            <i class="fa-solid fa-circle-plus"> <span>Upload</span></i>
+            <i class="fa-solid fa-gear"> <span>Setting</span></i>
+          </div>
+          <div class="sidemenu-footer">
+            <img
+              src="https://www.fakepersongenerator.com/Face/female/female20161025115339539.jpg"
+              alt="" />
+            <span>TutorName</span>
+          </div>
         </div>
       </div>
 
       <div class="homesection">
         <div class="verticalnav">
           <div class="top">
-            <i class=" top-icon fa-solid fa-house house"></i>
-            <i class=" top-icon fa-solid fa-comment"></i>
-            <i class=" top-icon fa-solid fa-calendar-days"></i>
-            <i class=" top-icon fa-sharp fa-solid fa-gear"></i>
+            <i class="top-icon fa-solid fa-house house"></i>
+            <i class="top-icon fa-solid fa-comment"></i>
+            <i class="top-icon fa-solid fa-calendar-days"></i>
+            <i class="top-icon fa-sharp fa-solid fa-gear"></i>
           </div>
         </div>
         <div class="home">
@@ -82,6 +105,11 @@
               <div class="category-thumbnail"></div>
               <div class="category-heading">Student</div>
             </div>
+            <div class="category">
+              <div class="category-thumbnail"></div>
+              <div class="category-heading">Student</div>
+            </div>
+
             <div class="category">
               <div class="category-thumbnail"></div>
               <div class="category-heading">Student</div>
@@ -231,30 +259,28 @@
               <button class="videobox-button">Rs.69</button>
             </div>
             <div class="video-box">
-                <div class="video-header">
-                  <h5>May 5,2021</h5>
-                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                </div>
-                <div class="video">
-                </div>
-                <div class="heading-rating">
-                  <div class="video-heading">
-                    <h5>What is Design Thinking ?</h5>
-                    <h5>Tutor Name</h5>
-                  </div>
-                  <div class="video-rating">
-                    <h5>69</h5>
-                    <i class="fa-regular fa-heart"></i>
-                  </div>
-                </div>
-                <button class="videobox-button">Rs.69</button>
+              <div class="video-header">
+                <h5>May 5,2021</h5>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
+              <div class="video"></div>
+              <div class="heading-rating">
+                <div class="video-heading">
+                  <h5>What is Design Thinking ?</h5>
+                  <h5>Tutor Name</h5>
+                </div>
+                <div class="video-rating">
+                  <h5>69</h5>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <button class="videobox-button">Rs.69</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-   
+
+    <script src="./index.js"></script>
   </body>
-  
 </html>
-<a href="./videoscreen.html">Video-Screen</a>
