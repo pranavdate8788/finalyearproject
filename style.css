@@ -41,6 +41,9 @@ body{
     padding: 0 0.6rem;
     justify-content: space-between;
 }
+#darkmode{
+    cursor: pointer;
+}
 .left{
     display: flex;
     width: 55vw;
