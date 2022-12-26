@@ -31,7 +31,10 @@
         </div>
 
         <div class="right">
-          <i class="fa-regular fa-moon" id="darkmode" onclick="ToggleDarkMode()"></i>
+          <i
+            class="fa-regular fa-moon"
+            id="darkmode"
+            onclick="ToggleDarkMode()"></i>
 
           <i class="fa-solid fa-circle-plus"></i>
           <i class="fa-solid fa-bell"></i>
@@ -45,7 +48,12 @@
             <i class="fa-regular fa-circle-xmark" id="menuclose"> </i>
           </div>
           <div class="sidemenufunctions">
-            <i class="fa-solid fa-moon" id="darkmode" onclick="ToggleDarkMode()"> <span>Dark Mode</span></i>
+            <i
+              class="fa-solid fa-moon"
+              id="darkmode"
+              onclick="ToggleDarkMode()">
+              <span>Dark Mode</span></i
+            >
             <i class="fa-solid fa-bell"> <span>Notifications</span></i>
             <i class="fa-solid fa-circle-plus"> <span>Upload</span></i>
             <i class="fa-solid fa-gear"> <span>Setting</span></i>
@@ -57,6 +65,75 @@
             <span>TutorName</span>
           </div>
         </div>
+        <div class="calender-field calender-field-close">
+          <div class="calender-head">
+            <span>MyTutor</span>
+            <i class="fa-regular fa-circle-xmark" id="calenderclose"> </i>
+          </div>
+          <h4 class="calender-heading">Select available dates</h4>
+          <div class="calenderview">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thur</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+              <button class="btn">1</button>
+              <button class="btn">2</button>
+              <button class="btn">3</button>
+              <button class="btn">4</button>
+              <button class="btn">5</button>
+              <button class="btn">6</button>
+              <button class="btn">7</button>
+              <button class="btn">8</button>
+              <button class="btn">9</button>
+              <button class="btn">10</button>
+              <button class="btn">11</button>
+              <button class="btn">12</button>
+              <button class="btn">13</button>
+              <button class="btn">14</button>
+              <button class="btn">15</button>
+              <button class="btn">16</button>
+              <button class="btn">17</button>
+              <button class="btn">18</button>
+              <button class="btn">19</button>
+              <button class="btn">20</button>
+              <button class="btn">21</button>
+              <button class="btn">22</button>
+              <button class="btn">23</button>
+              <button class="btn">24</button>
+              <button class="btn">24</button>
+              <button class="btn">26</button>
+              <button class="btn">27</button>
+              <button class="btn">28</button>
+              <button class="btn">29</button>
+              <button class="btn">30</button>
+              <button class="btn">31</button>
+               
+          </div>
+          <input type="date">
+          <h4 class="timeslot">Select Available Time Slot</h4>
+          <div class="available-time">
+            <div class="time-select">
+            <h5>10:00AM-11:00AM</h5>
+            </div>
+            <div class="time-select">
+              <h5>10:00AM-11:00AM</h5>
+            </div>
+            <div class="time-select">
+              <h5>10:00AM-11:00AM</h5>
+            </div>
+            <div class="time-select">
+              <h5>10:00AM-11:00AM</h5>
+            </div>
+
+          </div>
+          <h4 class="message-slot">Message</h4>
+           <input class="message" type="text" placeholder="Start chat now........">
+           <button class="book-slot">Book Slot</button>
+
+        </div>
       </div>
 
       <div class="homesection">
@@ -64,7 +141,7 @@
           <div class="top">
             <i class="top-icon fa-solid fa-house house"></i>
             <i class="top-icon fa-solid fa-comment"></i>
-            <i class="top-icon fa-solid fa-calendar-days"></i>
+            <i class="top-icon fa-solid fa-calendar-days" id="Calender"></i>
             <i class="top-icon fa-sharp fa-solid fa-gear"></i>
           </div>
         </div>
@@ -134,17 +211,17 @@
           <div class="video-container">
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -152,17 +229,17 @@
             </div>
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -170,17 +247,17 @@
             </div>
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -188,17 +265,17 @@
             </div>
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -206,17 +283,17 @@
             </div>
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -224,17 +301,17 @@
             </div>
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -242,17 +319,17 @@
             </div>
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -260,17 +337,17 @@
             </div>
             <div class="video-box">
               <div class="video-header">
-                <h5>May 5,2021</h5>
+                <span>May 5,2021</span>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
               <div class="video"></div>
               <div class="heading-rating">
                 <div class="video-heading">
-                  <h5>What is Design Thinking ?</h5>
-                  <h5>Tutor Name</h5>
+                  <span>What is Design Thinking ?</span>
+                  <span>Tutor Name</span>
                 </div>
                 <div class="video-rating">
-                  <h5>69</h5>
+                  <span>69</span>
                   <i class="fa-regular fa-heart"></i>
                 </div>
               </div>
@@ -284,3 +361,4 @@
     <script src="./index.js"></script>
   </body>
 </html>
+<a href="./videoscreen.html">click me</a>

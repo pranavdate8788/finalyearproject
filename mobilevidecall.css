@@ -14,6 +14,8 @@ body{
 }
 .footer-utility {
     gap: 1.5rem;
+
+    background: pink;
   }
   .message-footer {
     display: flex;

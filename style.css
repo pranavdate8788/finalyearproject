@@ -170,6 +170,102 @@ i{
   .hideSidemenu {
     transform: translateX(-260px);
   }
+
+  /*------------calender---------*/
+  .calender-head{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+   
+  .calender-heading{
+   margin-top: 2rem;
+   padding: 1rem;
+  }
+  .calenderview{
+ background: rgb(51, 194, 177);
+ height: 250px;
+  display: grid;
+ grid-template-columns: repeat(7,1fr);
+  border-radius: 20px;
+  padding: 1rem;
+  }
+  .dark .calenderview{
+    background-color: rgb(39, 31, 31);
+}
+   
+  .btn{
+    margin: .35rem;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(246, 247, 240);
+    border-radius: 100%;
+    border: 0;
+  }
+   .timeslot{
+    margin-top: .5rem;
+   padding: 1rem;
+   }
+   .available-time{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+   }
+   .time-select{
+    background: yellow;
+    height: 40px;
+    width: 45%;
+    padding: .8rem;
+    margin: .5rem;
+    border-radius: 20px;
+    justify-content: center;
+   }
+   .dark .time-select{
+    background-color: rgb(39, 31, 31);
+   }
+   .message-slot{
+   padding: .2rem;
+   margin-left: 1rem;
+   }
+   .message{
+    padding: .5rem;
+    margin-left: 1rem;
+    border-radius: 20px;
+    align-items: center;
+    width: 90%;
+   }
+   .book-slot{
+     position: absolute;
+     right: 0;
+     padding: .5rem;
+     margin: 3rem 1.5rem;
+     border-radius: 20px;
+   }
+.calender-field{
+    position: fixed;
+    height: calc(100vh - 20px);
+    width: 360px;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem 1rem;
+    border-radius: 0 2rem 2rem 0;
+    background: rgb(226, 226, 200);
+    z-index: 1000;
+    box-shadow: 0 15px 2rem rgba(58, 53, 53, 0.2);
+    transform: translateX(0);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+    overflow-x: hidden;
+}
+.dark .calender-field{
+    background-color: rgb(67, 66, 66);
+}
+.calender-field-close{
+    transform: translateX(-360px);
+}
+
+
+
 /*---------------result below section-----------------*/
 .status{
     display: flex;
